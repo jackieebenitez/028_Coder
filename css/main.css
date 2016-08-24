@@ -1,0 +1,111 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*imagen de fondo*/
+.header-img{
+	background-image: url("../img/header.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position:center top;
+	max-width: 100%;
+}
+#image1,#image2,#image3,#image4,#image5,#image6,#info{
+	height:20em;
+	background-size: cover;
+}
+#image1{
+	background-image: url("../img/1.jpg");
+}
+#image2{
+	background-image: url("../img/2.jpg");
+}
+#image3{
+	background-image: url("../img/3.jpg");
+}
+#image4{
+	background-image: url("../img/4.jpg");
+}
+#image5{
+	background-image: url("../img/5.jpg");
+}
+#image6{
+	background-image: url("../img/6.jpg");
+}
+#info{
+	background-color:rgba(250,88,88,0.9);
+	opacity:0;
+	-webkit-transition:opacity:0.2s;
+	padding-top:20%;
+}
+#image1:hover #info,#image2:hover #info,#image3:hover #info,#image4:hover #info,#image5:hover #info,#image6:hover #info{
+	opacity:0.7;
+}
+
+/*mover textos del header*/
+.tx-header{
+	padding-top:10%;
+	color:white;
+}
+
+/*opacidad en el nav*/
+.navbar{
+	background-color: white;
+	opacity:.3;
+}
+
+/*botón*/
+button{
+	margin:5% 0% 4% 0%;
+	padding:1% 2% 1% 2%;
+	border-radius: 2em;
+	border-style: none;
+	background-color:#ea3c3c;
+	font-size:130%;
+}
+
+/*hr*/
+hr{
+	width:17%;
+	height:6%;
+}
+
+/*tipografías*/
+h2{
+	font-size: 300%
+}
+h3{
+	font-size:250%;
+	color:white;
+}
+p{
+	font-size:120%;
+}
+
+/*backgrounds*/
+.bg-orange{
+	background-color: #ea3c3c;
+}
+.bg-gris{
+	background-color: #2f2727;
+	color:white;
+}
+
+/*padding a cada row*/
+.mgtodo{
+	padding-top:3%;
+	padding-bottom:3%;
+}
+
+/*funciona para no tener margin ni padding ni nada en las imgs*/
+.pd{
+	padding:0% !important;
+}
+
+/*Media queries */
+@media screen and (max-width: 768px) {
+	.navbar{
+	background-color: white;
+	opacity:5;
+		}
+}
